@@ -4,6 +4,8 @@ import { Router } from "@reach/router";
 import Header from "./Header/Header";
 import HomePage from "./HomePage";
 import RandomCatImage from "./Cats/RandomCatImage";
+import RandomCatFact from "./Cats/RandomCatFact";
+import RandomDogImage from "./Dogs/RandomDogImage";
 import "./App.css";
 
 const MainContainer = styled.div`
@@ -23,6 +25,8 @@ function App() {
       <Router>
         <HomePage path="/" />
         <RandomCatImage path="/randomCat" />
+        <RandomCatFact path="/randomCatFact"/>
+        <RandomDogImage path="/randomDog" />
       </Router>
     </MainContainer>
   );
